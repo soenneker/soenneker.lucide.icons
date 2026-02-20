@@ -46,6 +46,6 @@
         <Content Include="Resources\**\*.*"
                  Pack="true"
                  PackageCopyToOutput="true"
-                 ContentTargetFolders="contentFiles" />
+                 PackagePath="contentFiles\any\any\Resources\" />
     </ItemGroup>
 </Project>
