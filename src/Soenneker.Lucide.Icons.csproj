@@ -43,9 +43,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="Resources\**\*.*"
+        <None Include="Resources\**\*.*"
                  Pack="true"
                  PackageCopyToOutput="true"
-                 PackagePath="contentFiles\any\any\Resources\" />
+                 PackagePath="contentFiles\any\any\Resources\"
+                 BuildAction="None"/>
     </ItemGroup>
 </Project>
