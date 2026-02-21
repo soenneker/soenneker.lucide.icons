@@ -45,8 +45,8 @@
     <ItemGroup>
         <None Include="Resources\**\*.*"
                  Pack="true"
-                 PackageCopyToOutput="true"
-                 PackagePath="contentFiles\any\any\Resources\"
-                 BuildAction="None"/>
+                 PackagePath="contentFiles\any\any\Resources\%(RecursiveDir)"
+                 BuildAction="None"
+                 PackageCopyToOutput="true" />
     </ItemGroup>
 </Project>
