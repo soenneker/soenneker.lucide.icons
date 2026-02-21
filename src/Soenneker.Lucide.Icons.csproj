@@ -40,13 +40,15 @@
         <None Include="..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
+
     </ItemGroup>
 
     <ItemGroup>
         <None Include="Resources\**\*.*"
-                 Pack="true"
-                 PackagePath="contentFiles\any\any\Resources\%(RecursiveDir)"
-                 BuildAction="None"
-                 PackageCopyToOutput="true" />
+              Pack="true"
+              PackageCopyToOutput="true"
+              PackagePath="contentFiles\any\any\Resources\%(RecursiveDir)"
+              BuildAction="None"
+              ContentTargetFolders="contentFiles" />
     </ItemGroup>
 </Project>
