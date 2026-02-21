@@ -34,6 +34,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
         <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+        <RepositoryCommit>$(GITHUB_SHA)</RepositoryCommit>
     </PropertyGroup>
 
     <ItemGroup>
