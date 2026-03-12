@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Lucide.Icons.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Lucide.Icons\Soenneker.Lucide.Icons.csproj" />
     </ItemGroup>
 
     <ItemGroup>
