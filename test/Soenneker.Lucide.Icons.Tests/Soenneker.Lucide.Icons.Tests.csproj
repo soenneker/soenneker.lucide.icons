@@ -13,10 +13,5 @@
     <ItemGroup>
         <ProjectReference Include="..\..\src\Soenneker.Lucide.Icons\Soenneker.Lucide.Icons.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-        <Content Include="testconfig.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
 </Project>
+
