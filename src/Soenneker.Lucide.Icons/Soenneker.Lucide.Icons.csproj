@@ -11,40 +11,27 @@
         <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Lucide.Icons</AssemblyName>
-        <PackageId>Soenneker.Lucide.Icons</PackageId>
-        <PackageTags>lucide icons svg lucideicons library csharp dotnet c# .net</PackageTags>
         <Copyright>Copyright © 2026 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <IsPackable>true</IsPackable>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/soenneker/soenneker.lucide.icons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/soenneker/soenneker.lucide.icons</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>
-        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <LangVersion>latest</LangVersion>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageIcon>icon.png</PackageIcon>
         <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-        <PackageReleaseNotes Condition="'$(PACKAGE_RELEASE_NOTES)' != ''">
-            $(PACKAGE_RELEASE_NOTES)
-        </PackageReleaseNotes>
         <RepositoryCommit>$(GITHUB_SHA)</RepositoryCommit>
+        <NuspecFile>Soenneker.Lucide.Icons.nuspec</NuspecFile>
+        <NuspecBasePath>$(MSBuildProjectDirectory)</NuspecBasePath>
+        <NuspecProperties>
+            version=$(Version);
+            configuration=$(Configuration);
+            targetFramework=$(TargetFramework);
+            assemblyName=$(AssemblyName);
+            repositoryCommit=$(GITHUB_SHA)
+        </NuspecProperties>
     </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
-        <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
-        <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Include="Resources\**\*.*" Pack="true" PackageCopyToOutput="true" PackagePath="contentFiles/any/any/Resources/Lucide/%(RecursiveDir)" BuildAction="None" />
-    </ItemGroup>
 </Project>

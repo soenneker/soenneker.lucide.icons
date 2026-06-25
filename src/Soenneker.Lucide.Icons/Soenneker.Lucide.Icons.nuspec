@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>Soenneker.Lucide.Icons</id>
+        <version>$version$</version>
+        <authors>Jake Soenneker</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/soenneker/soenneker.lucide.icons</projectUrl>
+        <repository type="git" url="https://github.com/soenneker/soenneker.lucide.icons" branch="main" commit="$repositoryCommit$" />
+        <description>All of the Lucide svgs, updated daily</description>
+        <tags>lucide icons svg lucideicons library csharp dotnet c# .net</tags>
+        <readme>README.md</readme>
+        <icon>icon.png</icon>
+        <dependencies>
+            <group targetFramework="$targetFramework$" />
+        </dependencies>
+        <contentFiles>
+            <files include="any/any/Resources/Lucide/**" buildAction="None" copyToOutput="true" />
+        </contentFiles>
+    </metadata>
+    <files>
+        <file src="bin\$configuration$\$targetFramework$\$assemblyName$.dll" target="lib\$targetFramework$" />
+        <file src="bin\$configuration$\$targetFramework$\$assemblyName$.xml" target="lib\$targetFramework$" />
+        <file src="Resources\**\*.*" target="contentFiles\any\any\Resources\Lucide" />
+        <file src="..\..\README.md" target="README.md" />
+        <file src="..\..\LICENSE" target="LICENSE" />
+        <file src="..\..\icon.png" target="icon.png" />
+    </files>
+</package>
