@@ -4,6 +4,7 @@
         <Nullable>enable</Nullable>
         <Platforms>AnyCPU</Platforms>
         <NoWarn>$(NoWarn);1591</NoWarn>
+        <PackageReleaseNotes Condition="'$(PACKAGE_RELEASE_NOTES)' != ''">$(PACKAGE_RELEASE_NOTES)</PackageReleaseNotes>
     </PropertyGroup>
 
     <PropertyGroup>
